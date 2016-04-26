@@ -17,11 +17,12 @@
          }' >
       </script>
           <script>
-       sap.ui.getCore().attachInit(function () {
-            sap.ui.xmlview({
-               viewName : "dictapp.view.App"
-            }).placeAt("content");
-         });
+              sap.ui.getCore().attachInit(function () {
+                    new sap.ui.core.ComponentContainer({
+                       name : "dictapp"
+                    }).placeAt("content");
+
+                 });
       </script>
 <script type="text/javascript" charset="utf-8">
 function onBodyLoad() { document.addEventListener("deviceready",onDeviceReady,
