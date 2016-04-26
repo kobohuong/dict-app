@@ -17,10 +17,12 @@
          }' >
       </script>
           <script>
-              sap.ui.getCore().attachInit(function () {
-                    new sap.ui.core.ComponentContainer({
+              sap.ui.getCore().attachInit(function () { 
+                  new sap.m.Shell({
+                    app: new sap.ui.core.ComponentContainer({
                        name : "dictapp"
-                    }).placeAt("content");
+                    })
+                  }) .placeAt("content");
 
                  });
       </script>
