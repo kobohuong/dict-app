@@ -37,19 +37,19 @@
 		"type": "sap.ui.model.resource.ResourceModel",
 		"settings": {
 		  "bundleName": "dictapp.i18n.i18n"
-		},
+		}
+	  },
       "invoice": {
         "type": "sap.ui.model.json.JSONModel",
         "uri": "Invoices.json"
       } 
-	  }
 	},
     "resources": {
-          "css": [
-            {
-              "uri": "css/styles.css"
-            }
-          ]
-    }     
+      "css": [
+        {
+          "uri": "css/styles.css"
+        }
+      ]
+    }      
   }
 }
